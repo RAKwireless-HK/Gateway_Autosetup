@@ -107,12 +107,50 @@ Here is an example of how to use the operator in
 __Main.py
 
 :
-
+### Example 1
+1) Initial setup
+2) Setup the LAN WiFi access with a password
+3) Setup the WAN WiFi connection to a WiFi AP
 ```python
 operator = WisGateOS2_Operator(_time_of_waiting, _username, _password, _browser, _gateway_EUI, _gateway_IP, _profile_path)
 
 # Initial setup
 operator.initial_setup(_Country_Region, _Radio_Frequency, _Sub_Radio_Frequency)
+
+# Set LAN WiFi access with password
+operator.set_LAN_WiFi_Access_with_Password(_LAN_WiFi_Mode, _wifi_password)
+
+# Set WAN WiFi
+operator.set_WAN_WiFi_AP(_WAN_interface_option, _WAN_SSID, _WAN_WiFi_Mode, _WAN_WiFi_Password)
+
+# Logout and close
+operator.logout()
+operator.close()
+```
+### Example 2
+1) Login to the Gateway
+2) update the WAN WiFi connection to another WiFiAP
+
+```python
+operator = WisGateOS2_Operator(_time_of_waiting, _username, _password, _browser, _gateway_EUI, _gateway_IP, _profile_path)
+
+# Login to the gateway
+#operator.login()
+
+# Set WAN WiFi AP
+operator.revise_WAN_WiFi_AP(_WAN_SSID, _WAN_WiFi_Mode, _WAN_WiFi_Password)
+
+# Logout and close
+operator.logout()
+operator.close()
+```
+### Example 3
+1) Login to the Gateway
+2) Setup packet forwarder
+3) Setup the WAN LAN to connect to a static IP
+
+```python
+operator = WisGateOS2_Operator(_time_of_waiting, _username, _password, _browser, _gateway_EUI, _gateway_IP, _profile_path)
 
 # Login to the gateway
 #operator.login()
@@ -120,14 +158,8 @@ operator.initial_setup(_Country_Region, _Radio_Frequency, _Sub_Radio_Frequency)
 # Set packet forwarder
 operator.set_Packet_Forwarder_To_Gateway(_work_mode, _protocol, _mqtt_protocol, _target_ip_address)
 
-# Set LAN WiFi access with password
-operator.set_LAN_WiFi_Access_with_Password(_LAN_WiFi_Mode, _wifi_password)
-
 # Set WAN static IP
 operator.set_WAN_Static_IP(_WAN_Protocol, _IPv4_address, _IPv4_mask, _IPv4_router, _DNS_server)
-
-# Set WAN WiFi
-operator.set_WAN_WiFi_AP(_WAN_interface_option, _WAN_SSID, _WAN_WiFi_Mode, _WAN_WiFi_Password)
 
 # Logout and close
 operator.logout()
