@@ -115,7 +115,7 @@ operator = WisGateOS2_Operator(_time_of_waiting, _username, _password, _browser,
 operator.initial_setup(_Country_Region, _Radio_Frequency, _Sub_Radio_Frequency)
 
 # Login to the gateway
-operator.login()
+#operator.login()
 
 # Set packet forwarder
 operator.set_Packet_Forwarder_To_Gateway(_work_mode, _protocol, _mqtt_protocol, _target_ip_address)
