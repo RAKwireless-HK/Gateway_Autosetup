@@ -19,7 +19,6 @@ class Webpage:
         self.wait = WebDriverWait(self.driver, self.waiting_time)
         self.username = username
         self.password = password
-        #self.search_box = self.wait.until(EC.presence_of_element_located((By.NAME, "q")))
 
 class Web_Controller:
     def __init__(self, _driver, url, username ="", password ="", waiting_time = 10):
