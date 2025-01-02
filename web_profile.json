@@ -1,0 +1,463 @@
+{
+    "website_wifi_IP": "192.168.230.1",
+    "website_LAN_IP": "169.254.",
+    "Initial_SETUP": {
+        "init.web_adderss": "https://[WEBADDRESS]/set-password",
+        "password_setup": {
+            "Initial_Setup.1.Set_your_password": {
+                "field_type": "textbox",
+                "field_name": "//*[@id='root']/div[1]/div[2]/div[1]/main/div/form/div[1]/div[2]/div/div/input",
+                "waiting_time": 5
+            },
+            "Initial_Setup.1.Confirm_your_password": {
+                "field_type": "textbox",
+                "field_name": "//*[@id='root']/div[1]/div[2]/div[1]/main/div/form/div[2]/div[2]/div[2]/div/input",
+                "waiting_time": 5
+            },
+            "Initial_Setup.1.I_agree_to_the_terms_and_conditions": {
+                "field_type": "checkbox",
+                "field_name": "//*[@id='root']/div[1]/div[2]/div[1]/main/div/form/div[3]/span/span[1]/input",
+                "waiting_time": 5
+            },
+            "Initial_Setup.1.Confirm_your_password_button": {
+                "field_type": "button",
+                "field_name": "//*[@id='root']/div[1]/div[2]/div[1]/main/div/form/button",
+                "waiting_time": 5
+            }
+        },
+        "Region_setup": {
+            "Initial_Setup.2.Select_your_country": {
+                "field_type": "dropdown",
+                "field_name": "//*[@id='mui-component-select-country']",
+                "waiting_time": 5
+            },
+            "Initial_Setup.2.Select_your_country_ListItems": {
+                "field_type": "dropdown_selection",
+                "field_name": "/html/body/div[3]/div[3]",
+                "waiting_time": 5
+            },
+            "Initial_Setup.2.Select_your_country_HK": {
+                "field_type": "dropdown_selection",
+                "field_name": "/html/body/div[3]/div[3]/ul/li[42]",
+                "waiting_time": 5
+            },
+            "Initial_Setup.2.Select_your_country_HK_Input": {
+                "field_type": "Input",
+                "field_name": "/html/body/div[2]/div[3]/div[2]/div/div[2]/div/div[2]/div/div/input",
+                "waiting_time": 5
+            },
+            "Initial_Setup.2.Select_your_region": {
+                "field_type": "dropdown",
+                "field_name": "/html/body/div[2]/div[3]/div[2]/div/div[2]/div[2]/div/div[2]/div/div",
+                "waiting_time": 5
+            },
+            "Initial_Setup.2.Select_your_region_AS923": {
+                "field_type": "dropdown_selection",
+                "field_name": "/html/body/div[2]/div[3]/div[2]/div/div[2]/div[2]/div/div[2]/div/div/select/option[2]",
+                "waiting_time": 5
+            },
+            "Initial_Setup.2.Select_your_region_AS923-1_dropdown": {
+                "field_type": "dropdown_selection",
+                "field_name": "/html/body/div[2]/div[3]/div[2]/div/div[2]/div[2]/div[2]/div[2]/div/div",
+                "waiting_time": 5
+            },
+            "Initial_Setup.2.Select_your_region_AS923-1_selection": {
+                "field_type": "dropdown_selection",
+                "field_name": "/html/body/div[2]/div[3]/div[2]/div/div[2]/div[2]/div[2]/div[2]/div/div/select/option[2]",
+                "waiting_time": 5
+            },
+            "Initial_Setup.2.I_agree_to_the_terms_and_conditions": {
+                "field_type": "checkbox",
+                "field_name": "/html/body/div[2]/div[3]/div[2]/div/div[3]/span/span[1]/input",
+                "waiting_time": 5
+            },
+            "Initial_Setup.2.Confirm_button": {
+                "field_type": "button",
+                "field_name": "/html/body/div[2]/div[3]/div[3]/div/button",
+                "waiting_time": 5
+            },
+            "Update_n_Save_button": {
+                "field_type": "button",
+                "field_name": "/html/body/div/div[1]/div[2]/div[3]/div/div/button",
+                "waiting_time": 5
+            }
+        }
+    },
+    "GENDERAL_OPERATIONS": {
+        "general.web_adderss": "https://[WEBADDRESS]/login",
+        "contents": {
+            "username": {
+                "field_type": "textbox",
+                "field_name": "/html/body/div[1]/div[1]/div[2]/div[1]/main/div[1]/form/div[1]/div[2]/div/div/input",
+                "waiting_time": 5
+            },
+            "password": {
+                "field_type": "textbox",
+                "field_name": "/html/body/div[1]/div[1]/div[2]/div[1]/main/div[1]/form/div[2]/div[2]/div/div/input",
+                "waiting_time": 5
+            },
+            "login_button": {
+                "field_type": "button",
+                "field_name": "/html/body/div[1]/div[1]/div[2]/div[1]/main/div[1]/form/button",
+                "waiting_time": 5
+            }
+        }
+    },
+    "PAGE_NAVIGATION": {
+        "Dashboard": {
+            "field_type": "button",
+            "field_name": "/html/body/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/a",
+            "waiting_time": 5,
+            "sub_menu": {
+                "Dash.Overview": {
+                    "field_type": "button",
+                    "field_name": "/html/body/div[1]/div[1]/div[2]/div[1]/div/div/div[1]/div[2]/div[2]/div/button[1]/span",
+                    "waiting_time": 5,
+                    "Dash.OV.Packet_Capture": {
+                        "field_type": "button",
+                        "field_name": "/html/body/div[1]/div[1]/div[2]/div[1]/div/div/div[2]/div/div/div[2]/div[1]/button",
+                        "waiting_time": 5,
+                        "Desh.OV.PC.Download_Session": {
+                            "field_type": "button",
+                            "field_name": "/html/body/div[1]/div[1]/div[2]/div[1]/div/div/div/div[2]/div[1]/div[1]/div/button[2]",
+                            "waiting_time": 5
+                        }
+                    }
+                },
+                "Dash.LoRa_Statistics": {
+                    "field_type": "button",
+                    "field_name": "/html/body/div[1]/div[1]/div[2]/div[1]/div/div/div[1]/div[2]/div[2]/div/button[2]/span",
+                    "waiting_time": 5
+                }
+            }
+        },
+        "Configurations": {
+            "field_type": "button",
+            "field_name": "/html/body/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/a",
+            "waiting_time": 5,
+            "sub_menu": {
+                "Con.Overview": {
+                    "field_type": "button",
+                    "field_name": "//*[@id='content']/div[1]/div/div/div[1]/div[2]/div[2]/div/button[1]",
+                    "waiting_time": 5
+                },
+                "Con.Configuration": {
+                    "field_type": "button",
+                    "field_name": "/html/body/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/a",
+                    "waiting_time": 5,
+                    "sub_menu": {
+                        "Con.Configuration.Frequency_Plan.Button": {
+                            "field_type": "button",
+                            "field_name": "//*[@id='content']/div[1]/div/div/div[2]/div/div/form/div[4]/div/div[2]/div/div/div[1]/div[2]/div[3]/button",
+                            "waiting_time": 5
+                        },
+                        "Con.Configuration.Packet_Forwarder_option": {
+                            "field_type": "RadioButton",
+                            "field_name": "//*[@id='content']/div[1]/div/div/div[2]/div/div/form/div[2]/div[2]/div/div/fieldset/div",
+                            "waiting_time": 5
+                        },
+                        "Con.Configuration.Packet_Forwarder.Protocol_Page": {
+                            "field_type": "page",
+                            "field_name": "//*[@id='protocolAccordion-header']",
+                            "waiting_time": 5
+                        },
+                        "Con.Configuration.Packet_Forwarder.Protocol_Page.Set_To_LoRaWAN": {
+                            "field_type": "RadioButton",
+                            "field_name": "//*[@id='protocolAccordion-content']/div/fieldset",
+                            "waiting_time": 5
+                        },
+                        "Con.Configuration.Packet_Forwarder.Protocol_Page.LoRaGatewayMQTTBridgeParameters.MQTT_Protocol": {
+                            "field_type": "dropdown",
+                            "field_name": "//*[@id='mui-component-select-mqttProtocol']",
+                            "waiting_time": 5
+                        },
+                        "Con.Configuration.Packet_Forwarder.Protocol_Page.LoRaGatewayMQTTBridgeParameters.MQTT_Protocol_ListItems": {
+                            "field_type": "dropdown_selection",
+                            "field_name": "//*[@id='menu-mqttProtocol']/div[3]",
+                            "waiting_time": 5
+                        },
+                        "Con.Configuration.Packet_Forwarder.Protocol_Page.LoRaGatewayMQTTBridgeParameters.MQTT_Broker_Address": {
+                            "field_type": "textbox",
+                            "field_name": "//*[@id='content']/div[1]/div/div/div[2]/div/div/form/div[5]/div[2]/div/div/div/div[2]/div/div/div[3]/div/div[2]/div/div/input",
+                            "waiting_time": 5
+                        },
+                        "Con.Configuration.Packet_Forwarder.Protocol_Page.LoRaGatewayMQTTBridgeParameters.SaveChanges": {
+                            "field_type": "textbox",
+                            "field_name": "//*[@id='content']/div[3]/div/div/button",
+                            "waiting_time": 5
+                        }
+                    }
+                }
+            },
+            "Con.Applications": {
+                "field_type": "button",
+                "field_name": "//*[@id='content']/div[1]/div/div/div[1]/div[2]/div[2]/div/button[3]",
+                "waiting_time": 5
+            },
+            "Con.Gateway": {
+                "field_type": "button",
+                "field_name": "//*[@id='content']/div[1]/div/div/div[1]/div[2]/div[2]/div/button[4]",
+                "waiting_time": 5
+            }
+        }
+    },
+    "Network": {
+        "field_type": "button",
+        "field_name": "/html/body/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/a",
+        "waiting_time": 5,
+        "sub_menu": {
+            "Net.WAN": {
+                "field_type": "button",
+                "field_name": "//*[@id='content']/div[1]/div/div/div[1]/div[2]/div[2]/div/button[1]",
+                "waiting_time": 5,
+                "sub_menu": {
+                    "Net.WAN.Ethernet_Page": {
+                        "field_type": "button",
+                        "field_name": "//*[@id='ethernet']",
+                        "waiting_time": 5
+                    },
+                    "Net.WAN.Ethernet_Page.Setting_Button": {
+                        "field_type": "button",
+                        "field_name": "//*[@id='ethernet']/div/div[2]/button",
+                        "waiting_time": 5
+                    },
+                    "Net.WAN.Ethernet_Page.Protocol": {
+                        "field_type": "RadioButton",
+                        "field_name": "//*[@id='content']/div[1]/div/div/div[2]/form/div[3]/div[2]/div/fieldset/div",
+                        "waiting_time": 5
+                    },
+                    "Net.WAN.Ethernet_Page.IPv4_Address": {
+                        "field_type": "textbox",
+                        "field_name": "//*[@id='content']/div[1]/div/div/div[2]/form/div[3]/div[2]/div/div[1]/div[1]/div[2]/div/div/input",
+                        "waiting_time": 5
+                    },
+                    "Net.WAN.Ethernet_Page.IPv4_netmask": {
+                        "field_type": "textbox",
+                        "field_name": "//*[@id='content']/div[1]/div/div/div[2]/form/div[3]/div[2]/div/div[1]/div[2]/div[2]/div/div/input",
+                        "waiting_time": 5
+                    },
+                    "Net.WAN.Ethernet_Page.IPv4_router": {
+                        "field_type": "textbox",
+                        "field_name": "//*[@id='content']/div[1]/div/div/div[2]/form/div[3]/div[2]/div/div[1]/div[3]/div[2]/div/div/input",
+                        "waiting_time": 5
+                    },
+                    "Net.WAN.Ethernet_Page.DNS_Server": {
+                        "field_type": "textbox",
+                        "field_name": "//*[@id='content']/div[1]/div/div/div[2]/form/div[3]/div[2]/div/div[2]/div/div/div[2]/div/div/input",
+                        "waiting_time": 5
+                    },
+                    "Net.WAN.Ethernet_Page.Add_Button": {
+                        "field_type": "button",
+                        "field_name": "//*[@id='content']/div[1]/div/div/div[2]/form/div[3]/div[2]/div/div[2]/div/button",
+                        "waiting_time": 5
+                    },
+                    "Net.WAN.Ethernet_Page.Save_Button": {
+                        "field_type": "button",
+                        "field_name": "//*[@id='content']/div[3]/div/div/button[2]",
+                        "waiting_time": 5
+                    },
+                    "Net.WAN.WiFi_Page": {
+                        "field_type": "button",
+                        "field_name": "//*[@id='wifi']",
+                        "waiting_time": 5
+                    },
+                    "Net.WAN.WiFi_Page.Setting_Button": {
+                        "field_type": "button",
+                        "field_name": "//*[@id='wifi']/div/div[2]/button",
+                        "waiting_time": 5
+                    },
+                    "Net.WAN.WiFi_Page.Interface_option": {
+                        "field_type": "radio_button",
+                        "field_name": "//*[@id='content']/div[1]/div/div/div[2]/div/form/div[2]/div[2]/div/fieldset",
+                        "waiting_time": 5
+                    },
+                    "Net.WAN.WiFi_Page.Interface_option_warning_close": {
+                        "field_type": "button",
+                        "field_name": "/html/body/div[2]/div[3]/div[3]/div/button",
+                        "waiting_time": 5
+                    },
+                    "Net.WAN.WiFi_Page.Interface_option_Leave_page": {
+                        "field_type": "button",
+                        "field_name": "/html/body/div[2]/div[3]/div[3]/div/button[1]",
+                        "waiting_time": 5
+                    },
+                    "Net.WAN.WiFi_Page.Enter_SSID_Button": {
+                        "field_type": "button",
+                        "field_name": "//*[@id='content']/div[1]/div/div/div[2]/div/form/div[3]/div[2]/div/div[2]/div/button",
+                        "waiting_time": 5
+                    },
+                    "Net.WAN.WiFi_Page.SSID_Textbox": {
+                        "field_type": "textbox",
+                        "field_name": "//*[@id='content']/div[1]/div/div/div[2]/div/form/div[3]/div[2]/div/div[2]/div/div[2]/div/div/input",
+                        "waiting_time": 5
+                    },
+                    "Net.WAN.WiFi_Page.Encryption_Drpodown": {
+                        "field_type": "radio_button",
+                        "field_name": "//*[@id='content']/div[1]/div/div/div[2]/div/form/div[4]/div[2]/div/div[1]/div[2]/div/div",
+                        "waiting_time": 5
+                    },
+                    "Net.WAN.WiFi_Page.Encryption_ListItems": {
+                        "field_type": "dropdown_selection",
+                        "field_name": "//*[@id='menu-encryption']/div[3]/ul",
+                        "waiting_time": 5
+                    },
+                    "Net.WAN.WiFi_Page.Password_Textbox": {
+                        "field_type": "textbox",
+                        "field_name": "//*[@id='content']/div[1]/div/div/div[2]/div/form/div[4]/div[2]/div/div[2]/div[2]/div/div/input",
+                        "waiting_time": 5
+                    },
+                    "Net.WAN.WiFi_Page.Protocol": {
+                        "field_type": "radio_button",
+                        "field_name": "//*[@id='content']/div[1]/div/div/div[2]/div/form/div[5]/div[2]/div/fieldset",
+                        "waiting_time": 5
+                    },
+                    "Net.WAN.WiFi_Page.Save_Button": {
+                        "field_type": "button",
+                        "field_name": "/html/body/div[1]/div[1]/div[2]/div[3]/div/div/button[2]",
+                        "waiting_time": 5
+                    },
+                    "Net.WAN.WiFi_Page.Close_Button": {
+                        "field_type": "button",
+                        "field_name": "/html/body/div[2]/div[3]/div[3]/div/button",
+                        "waiting_time": 5
+                    }
+
+                },
+                "Net.LAN": {
+                    "field_type": "button",
+                    "field_name": "//*[@id='content']/div[1]/div/div/div[1]/div[2]/div[2]/div/button[2]",
+                    "waiting_time": 5,
+                    "sub_menu": {
+                        "Net.LAN.WiFi_Page": {
+                            "field_type": "button",
+                            "field_name": "//*[@id='content']/div[1]/div/div/div[2]/div/div/div[3]",
+                            "waiting_time": 5
+                        },
+                        "Net.LAN.WiFi_Page.Setting_Button": {
+                            "field_type": "button",
+                            "field_name": "//*[@id='wifi']/div/div[2]/button",
+                            "waiting_time": 5
+                        },
+                        "Net.LAN.WiFi_Page.WiFi_Setting.Encryption": {
+                            "field_type": "dropdown",
+                            "field_name": "/html/body/div[1]/div[1]/div[2]/div[1]/div/div/div[2]/form/div[5]/div[2]/div/div[1]/div[2]/div/div",
+                            "waiting_time": 5
+                        },
+                        "Net.LAN.WiFi_Page.WiFi_Setting.Encryption_ListItems": {
+                            "field_type": "dropdown_selection",
+                            "field_name": "/html/body/div[2]/div[3]",
+                            "waiting_time": 5
+                        },
+                        "Net.LAN.WiFi_Page.WiFi_Setting.SSID": {
+                            "field_type": "textbox",
+                            "field_name": "//*[@id='content']/div[1]/div/div/div[2]/form/div[4]/div[2]/div/div[2]/div[2]/div/div/input",
+                            "waiting_time": 5
+                        },
+                        "Net.LAN.WiFi_Page.WiFi_Setting.Password": {
+                            "field_type": "textbox",
+                            "field_name": "//*[@id='content']/div[1]/div/div/div[2]/form/div[5]/div[2]/div/div[2]/div[2]/div/div/input",
+                            "waiting_time": 5
+                        },
+                        "Net.LAN.WiFi_Page.WiFi_Setting.Hide_SSID":
+                        {
+                            "field_type":"button",
+                            "field_name": "/html/body/div[1]/div[1]/div[2]/div[1]/div/div/div[2]/form/div[5]/div[2]/div/div[3]/span/span[1]/span/input",
+                            "waiting_time": 5
+                        },
+                        "Net.LAN.WiFi_Page.WiFi_Setting.Save_Button": {
+                            "field_type": "button",
+                            "field_name": "//*[@id='content']/div[3]/div/div/button[2]",
+                            "waiting_time": 5
+                        },
+                        "Net.LAN.WiFi_Page.WiFi_Setting.Close_Button": {
+                            "field_type": "button",
+                            "field_name": "/html/body/div[2]/div[3]/div[3]/div/button",
+                            "waiting_time": 5
+                        }
+                    }
+                }
+            }
+        },
+        "Diagnostic": {
+            "field_type": "button",
+            "field_name": "/html/body/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/a",
+            "waiting_time": 5,
+            "sub_menu": {
+                "Dia.System_log": {
+                    "field_type": "button",
+                    "field_name": "/html/body/div[1]/div[1]/div[2]/div[1]/div/div/div[1]/div[2]/div[2]/div/button[1]/span",
+                    "waiting_time": 5
+                },
+                "Dia.Network_Utilities": {
+                    "field_type": "button",
+                    "field_name": "/html/body/div[1]/div[1]/div[2]/div[1]/div/div/div[1]/div[2]/div[2]/div/button[2]/span",
+                    "waiting_time": 5
+                }
+            }
+        },
+        "Settings": {
+            "field_type": "button",
+            "field_name": "/html/body/div[1]/div[1]/div[1]/div[1]/div[2]/div[5]/a",
+            "waiting_time": 5,
+            "sub_menu": {
+                "Set.General_Settings": {
+                    "field_type": "button",
+                    "field_name": "/html/body/div[1]/div[1]/div[2]/div[1]/div/div/div[1]/div[2]/div[2]/div/button[1]/span",
+                    "waiting_time": 5
+                },
+                "Set.Backup_and_restore": {
+                    "field_type": "button",
+                    "field_name": "/html/body/div[1]/div[1]/div[2]/div[1]/div/div/div[1]/div[2]/div[2]/div/button[2]/span",
+                    "waiting_time": 5
+                },
+                "Set.Firmware": {
+                    "field_type": "button",
+                    "field_name": "/html/body/div[1]/div[1]/div[2]/div[1]/div/div/div[1]/div[2]/div[2]/div/button[3]/span",
+                    "waiting_time": 5
+                },
+                "Set.File_browser": {
+                    "field_type": "button",
+                    "field_name": "/html/body/div[1]/div[1]/div[2]/div[1]/div/div/div[1]/div[2]/div[2]/div/button[4]/span",
+                    "waiting_time": 5
+                },
+                "Set.WisDM": {
+                    "field_type": "button",
+                    "field_name": "/html/body/div[1]/div[1]/div[2]/div[1]/div/div/div[1]/div[2]/div[2]/div/button[5]/span",
+                    "waiting_time": 5
+                }
+            }
+        },
+        "Extensions": {
+            "field_type": "button",
+            "field_name": "/html/body/div[1]/div[1]/div[1]/div[1]/div[2]/div[6]/a",
+            "waiting_time": 5,
+            "sub_menu": {
+                "Ext.Installed": {
+                    "field_type": "button",
+                    "field_name": "/html/body/div[1]/div[1]/div[2]/div[1]/div/div[1]/div[2]/div[2]/div/button[1]/span",
+                    "waiting_time": 5
+                },
+                "Ext.Extension_gallery": {
+                    "field_type": "button",
+                    "field_name": "/html/body/div[1]/div[1]/div[2]/div[1]/div/div[1]/div[2]/div[2]/div/button[2]/span",
+                    "waiting_time": 5
+                }
+            }
+        },
+        "Bottom_Icon":
+        {
+            "field_type": "button",
+            "field_name" : "/html/body/div[1]/div[1]/div[1]/div[2]/div/div",
+            "waiting_time" : 5,
+            "sub_menu":{
+                "BI.Logout":
+                {
+                    "field_type": "button",
+                    "field_name": "/html/body/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]",
+                    "waiting_time": 5
+                }
+            }
+
+        }
+    }
+}
