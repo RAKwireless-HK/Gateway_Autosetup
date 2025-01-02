@@ -166,6 +166,13 @@ operator.logout()
 operator.close()
 ```
 
+## Extra Development
+WisGateOS2 offers a variety of settings options as a LoRaWAN Gateway operating system. This project may not cover all available options or functions you might be looking for. However, you can enhance or introduce existing scripts based on the current project structure. Here are some suggestions:
+
+1. **Add New Features**: Consider adding new methods in `RAKGateway_Controller.py` to support additional features of the WisGateOS2 gateway within the `WisGateOS2_Operator` class.
+
+2. **Enhance JSON Profile**: Update `web_profile.json` to include more configuration options.
+
 ## License
 
 This project is licensed under the Apache-2.0 license.
