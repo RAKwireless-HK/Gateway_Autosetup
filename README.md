@@ -135,7 +135,7 @@ operator.close()
 operator = WisGateOS2_Operator(_time_of_waiting, _username, _password, _browser, _gateway_EUI, _gateway_IP, _profile_path)
 
 # Login to the gateway
-#operator.login()
+operator.login()
 
 # Set WAN WiFi AP
 operator.revise_WAN_WiFi_AP(_WAN_SSID, _WAN_WiFi_Mode, _WAN_WiFi_Password)
@@ -153,7 +153,7 @@ operator.close()
 operator = WisGateOS2_Operator(_time_of_waiting, _username, _password, _browser, _gateway_EUI, _gateway_IP, _profile_path)
 
 # Login to the gateway
-#operator.login()
+operator.login()
 
 # Set packet forwarder
 operator.set_Packet_Forwarder_To_Gateway(_work_mode, _protocol, _mqtt_protocol, _target_ip_address)
